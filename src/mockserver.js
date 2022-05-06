@@ -1,7 +1,5 @@
 import { createServer }  from 'miragejs'
 
-import React from 'react'
-
 function mockServer() {
 
   let server = createServer(
