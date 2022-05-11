@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
+import { Helmet } from 'react-helmet';
 import LoadingMask from './LoadingMask'
 import Book from './Book'
 import { Button, TextField } from "@mui/material";
@@ -36,6 +37,9 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>Test page title with Helmet</title>
+      </Helmet>
       { loading ? <LoadingMask /> : 
         <>
           <Button variant="contained" onClick={sortBooks}>Sort</Button>
