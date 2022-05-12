@@ -23,5 +23,4 @@ function mockServer() {
   return server
 }
 
-
 export default mockServer

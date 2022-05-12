@@ -43,7 +43,7 @@ function App() {
       { loading ? <LoadingMask /> : 
         <>
           <Button variant="contained" onClick={sortBooks}>Sort</Button>
-          <TextField id="outlined-basic" label="Outlined" variant="outlined" value={input} onChange={({target}) => setInput(target.value)} />
+          <TextField id="outlined-basic" label="Search" variant="outlined" value={input} onChange={({target}) => setInput(target.value)} />
 
           {books.map(({title, author, year}) => (title.toLowerCase().includes(input.toLowerCase()) && <Book key={year} title={title} author={author} year={year} />))}
         </>
